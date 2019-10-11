@@ -1,0 +1,13 @@
+::placeholder {
+	/* Most modern browsers support this now. */
+	color: rgb(66, 65, 66) !important;
+}
+select {
+	color: rgb(66, 65, 66) !important;
+}
+
+@media (min-width: 1176px) {
+	.section-dialog {
+		width: 65% !important;
+	}
+}

@@ -1,0 +1,1 @@
+<a href="{{ route('join-sanctuary') }}"> Register Here</a>

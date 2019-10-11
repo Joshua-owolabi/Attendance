@@ -1,0 +1,35 @@
+::-webkit-input-placeholder {
+  /* Most modern browsers support this now. */
+  color: #424142 !important;
+}
+
+::-moz-placeholder {
+  /* Most modern browsers support this now. */
+  color: #424142 !important;
+}
+
+:-ms-input-placeholder {
+  /* Most modern browsers support this now. */
+  color: #424142 !important;
+}
+
+::-ms-input-placeholder {
+  /* Most modern browsers support this now. */
+  color: #424142 !important;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #424142 !important;
+}
+
+select {
+  color: #424142 !important;
+}
+
+@media (min-width: 1176px) {
+  .section-dialog {
+    width: 65% !important;
+  }
+}
+
