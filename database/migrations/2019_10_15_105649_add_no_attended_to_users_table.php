@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAttendancePickingsTable extends Migration
+class AddNoAttendedToUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class CreateAttendancePickingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('attendance_pickings', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->date('att_date');
-            $table->bigInteger('user_id');
-            $table->timestamps();
+        Schema::table('users', function (Blueprint $table) {
+            //
+            $table->integer('no_attended')->default(0);
         });
     }
 
@@ -28,6 +26,8 @@ class CreateAttendancePickingsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('attendance_pickings');
+        Schema::table('users', function (Blueprint $table) {
+            //
+        });
     }
 }

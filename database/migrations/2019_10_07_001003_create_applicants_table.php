@@ -28,7 +28,7 @@ class CreateApplicantsTable extends Migration
    $table->string('joining_reason');
    $table->string('suggestions')->nullable();
    $table->date('dob');
-   $table->bigInteger('phone_number')->nullable();
+   $table->string('phone_number')->nullable();
    $table->integer('verified')->default(0);
    $table->timestamp('email_verified_at')->nullable();
    $table->string('password');

@@ -26,3 +26,27 @@
 	border: 1px solid #3db843;
 	cursor: pointer;
 }
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu a:active,
+.dropdown-menu a:focus,
+.dropdown-menu a:hover {
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4);
+	background-color: #3db843;
+}
+.search-img {
+	width: 150px;
+	border-radius: 75px;
+	box-shadow: 0 7px 12px 0 rgba(0,0,0,.14);
+}
+.search-card {
+	width: 80%;
+	margin: 2em auto;
+	border-radius: 30px;
+}
+.search-btn {
+	margin-top: 5em;
+}
+.center-element {
+	margin: 0 auto;
+}
