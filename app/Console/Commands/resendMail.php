@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Exception;
+use App\Mail\SuccessMail;
 use App\models\Applicant;
 use App\Mail\ResendCredencials;
 use Illuminate\Console\Command;
@@ -43,7 +44,6 @@ class resendMail extends Command
     public function handle()
     {
         $unverified_users = Applicant::where('verified', 0)->get();
-
         if ($unverified_users) {
             foreach ($unverified_users as $user) {
                 try {
@@ -51,7 +51,7 @@ class resendMail extends Command
                     DB::table('applicants')->where('id', $user->id)->update([
                         'verified' => 1,
                     ]);
-                    echo "Mail Successfully Sent";
+                    Mail::to('owolabi.oluwasegun@lmu.edu.ng')->send(new SuccessMail($user));
                 } catch (Exception $ex) {
                     echo $ex;
                 }

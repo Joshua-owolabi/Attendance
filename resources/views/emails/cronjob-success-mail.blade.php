@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
-    xmlns:o="urn:schemas-microsoft-com:office:office">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 
 <head>
     <meta charset="utf-8">
@@ -343,43 +342,32 @@
 <body width="100%" bgcolor="#222222" style="margin: 0; mso-line-height-rule: exactly;">
     <center style="width: 100%; background: #222222; text-align: left;">
         <!-- Visually Hidden Preheader Text : BEGIN -->
-        <div
-            style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: 'Poppins', sans-serif;">
+        <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: 'Poppins', sans-serif;">
         </div>
         <div style="max-width: 620px; margin: auto;" class="email-container">
-            <table class="container" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0"
-                align="center" width="100%" style="max-width: 620px;">
+            <table class="container" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 620px;">
                 <tr>
-                    <td
-                        style="background: #ffffff; padding: 56px 0px 30px 0px;font-family: 'Poppins', sans-serif; text-align: center;">
-                        <img src="https://res.cloudinary.com/coderoute/image/upload/v1570458492/Sanctuary_b4ajaa.png"
-                            alt="Sanctuary Logo" style="width: 150px; height:150px;">
+                    <td style="background: #ffffff; padding: 56px 0px 30px 0px;font-family: 'Poppins', sans-serif; text-align: center;">
+                        <img src="https://res.cloudinary.com/coderoute/image/upload/v1570458492/Sanctuary_b4ajaa.png" alt="Sanctuary Logo" style="width: 150px; height:150px;">
                     </td>
                 </tr>
                 <!-- Banner Image: BEGIN -->
                 <tr>
                     <td bgcolor="#ffffff">
-                        <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0"
-                            width="100%">
+                        <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
-                                <td class="header-td"
-                                    style="padding:6px 60px 13px 40px; font-family: 'Poppins', sans-serif; text-align:center;">
-                                    <h1 class="h1-title"
-                                        style="padding:0px 0px 10px 0px; font-family: 'Poppins', sans-serif; font-size: 24px; line-height: 41px; color: green; font-weight: 600;">
-                                        <a href="#" class="h1-title-a"
-                                            style="color: #111111; text-decoration: none;">Sanctuary Membership
-                                            Application</a></h1>
-                                    <p class="header-p"
-                                        style="margin: 0; font-size: 14px; line-height: 26px; color: #767676; font-weight: normal; text-align: left;">
-                                        Hi <strong>{{ $sur_name }} {{ $first_name }},</strong> <br><br>
-                                        You have successfully completed your application to Sanctuary Unit.
+                                <td class="header-td" style="padding:6px 60px 13px 40px; font-family: 'Poppins', sans-serif; text-align:center;">
+                                    <h1 class="h1-title" style="padding:0px 0px 10px 0px; font-family: 'Poppins', sans-serif; font-size: 24px; line-height: 41px; color: green; font-weight: 600;">
+                                        <a href="#" class="h1-title-a" style="color: #111111; text-decoration: none;">Successful Cronjob Executuion.</a></h1>
+                                    <p class="header-p" style="margin: 0; font-size: 14px; line-height: 26px; color: #767676; font-weight: normal; text-align: left;">
+                                        Hi, Cronjob resend mail was successful for this user.
                                         <br>
                                         <br>
-                                        <strong>Your Login Credencials</strong>
+                                        <strong>User Details</strong>
                                         <br>
+                                        Full name: <strong>{{ $sur_name }} {{ $first_name }} {{ $last_name }}</strong>
                                         Email: <strong>{{ $email }}</strong>
                                         <br>
-                                        Password: <strong>{{ $password }}</strong>
                                         <br>
                                         <a href="https://sanctuary.lmu.edu.ng/login">Login here</a>
                                         <br>

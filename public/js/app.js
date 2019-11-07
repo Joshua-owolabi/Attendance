@@ -49516,10 +49516,10 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/dropcode/Documents/Webdev/Laravel/sanc-att/resources/js/app.js */"./resources/js/app.js");
-__webpack_require__(/*! /home/dropcode/Documents/Webdev/Laravel/sanc-att/resources/sass/app.scss */"./resources/sass/app.scss");
-__webpack_require__(/*! /home/dropcode/Documents/Webdev/Laravel/sanc-att/resources/sass/customs.scss */"./resources/sass/customs.scss");
-module.exports = __webpack_require__(/*! /home/dropcode/Documents/Webdev/Laravel/sanc-att/resources/sass/admin.scss */"./resources/sass/admin.scss");
+__webpack_require__(/*! /home/dropcode/Documents/webdev/Laravel/Attendance/resources/js/app.js */"./resources/js/app.js");
+__webpack_require__(/*! /home/dropcode/Documents/webdev/Laravel/Attendance/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/dropcode/Documents/webdev/Laravel/Attendance/resources/sass/customs.scss */"./resources/sass/customs.scss");
+module.exports = __webpack_require__(/*! /home/dropcode/Documents/webdev/Laravel/Attendance/resources/sass/admin.scss */"./resources/sass/admin.scss");
 
 
 /***/ })

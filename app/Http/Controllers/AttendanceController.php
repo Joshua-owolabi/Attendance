@@ -105,4 +105,29 @@ class AttendanceController extends Controller
         return redirect()->back();
         //  check if user have been scanned already.
     }
+
+
+    /*
+    @author Dropcode <dropcode__>
+*/
+
+    public function reset_attendance(Request $request)
+    {
+        try {
+            // clear all data in attendance pickings(total amount of meetings)
+            DB::table('attendance_pickings')->delete();
+            // clear all data in attendance table
+            DB::table('attendances')->delete();
+            // clear user attendance records
+            DB::table('users')->where('attendance', '>', 0)->orWhere('no_attended', '>', 0)->update([
+                'attendance' => 0,
+                'no_attended' => 0,
+            ]);
+            swal()->position('top-right')->toast()->autoclose(6000)->message('Attendance Cleared', "All members attendance have been cleared.", 'success');
+            return redirect()->back();
+        } catch (Exception $ex) {
+            swal()->position('top-right')->toast()->autoclose(6000)->message('Attendance Error', "Error clearing members attendance, please try again", 'error');
+            return redirect()->back();
+        }
+    }
 }

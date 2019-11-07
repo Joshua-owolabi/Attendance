@@ -20,20 +20,22 @@ Route::post('membership-store', 'ApplicantController@store')->name('membership.s
 
 Route::group(['middleware' => ['auth', 'isAdmin']], function () {
 
-  Route::get('members', 'UserController@index')->name('members-all');
-  Route::post('member-update', 'UserController@admin_update_member')->name('member.update');
-  Route::post('member-delete', 'UserController@delete_member')->name('member.delete');
-  Route::get('search-members', 'UserController@search_members')->name('search-members');
-  Route::get('view-member/{id}', 'UserController@view_member')->name('view-member');
+    Route::get('members', 'UserController@index')->name('members-all');
+    Route::post('member-update', 'UserController@admin_update_member')->name('member.update');
+    Route::post('member-delete', 'UserController@delete_member')->name('member.delete');
+    Route::get('search-members', 'UserController@search_members')->name('search-members');
+    Route::get('view-member/{id}', 'UserController@view_member')->name('view-member');
 
-  // ADMIN DASHBOARD ROUTES
-  Route::get('attendance-panel', 'AttendanceController@index')->name('attendance');
-  Route::post('pick-date', 'AttendanceController@pick_date')->name('pick-date');
-  Route::post('take-attendance', 'AttendanceController@take_member_attendance')->name('take-attendance');
-  //PRINTING ROUTES
-  Route::get('print-panel', 'DashboardController@print_panel')->name('print-panel');
-  Route::get('members-print', 'DashboardController@all_members_print')->name('members-print');
-  Route::post('subunit-print', 'DashboardController@subunit_print')->name('subunit-print');
+    // ADMIN DASHBOARD ROUTES
+    Route::get('attendance-panel', 'AttendanceController@index')->name('attendance');
+    Route::post('pick-date', 'AttendanceController@pick_date')->name('pick-date');
+    Route::post('take-attendance', 'AttendanceController@take_member_attendance')->name('take-attendance');
+    Route::post('reset-attendance', 'AttendanceController@reset_attendance')->name('attendance.reset');
+
+    //PRINTING ROUTES
+    Route::get('print-panel', 'DashboardController@print_panel')->name('print-panel');
+    Route::get('members-print', 'DashboardController@all_members_print')->name('members-print');
+    Route::post('subunit-print', 'DashboardController@subunit_print')->name('subunit-print');
 });
 
 // USER CONTROLLER ROUTES

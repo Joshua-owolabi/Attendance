@@ -76,11 +76,13 @@
                         <select class="form-control" id="department" name="department" value="{{$user->department}}">
                           <option value="{{$user->department}}" selected>{{ $user->department }}</option>
                           <option value="Accounting">Accounting</option>
-                          <option value="Agricultural Extension & Economics">Agricultural Extension & Economics</option>
+                          <option value="Agricultural Extension & Economics">Agricultural Extension & Economics
+                          </option>
                           <option value="Animal Science">Animal Science</option>
                           <option value="Agric & Bio Systems Engineering">Agric & Bio Systems Engineering</option>
                           <option value="Banking and Finance">Banking and Finance</option>
                           <option value="Business Administrtion">Business Administration</option>
+                          <option value="Biochemistry">Biochemistry</option>
                           <option value="Computer Science">Computer Science</option>
                           <option value="Civil Engineering">Civil Engineering</option>
                           <option value="Chemical Engineering">Chemical Engineering</option>
@@ -88,14 +90,18 @@
                           <option value="Electrical & Information Engineering"> Electrical & Information Engineering
                           </option>
                           <option value="Economics">Economics</option>
-                          <option value="Mechanical Engineering">Mechanical Engineering</option>
-                          <option value="Micro Biology">Micro Biology</option>
-                          <option value="Biochemistry">Biochemistry</option>
+                          <option value="Food Sciences">Food Sciences</option>
                           <option value="Industrial Physics">Industrial Physics</option>
                           <option value="Industrial Mathematics">Industrial Mathematics</option>
-                          <option value="Mass Communication">Mass Communication</option>
-                          <option value="Sociology">Sociology</option>
+                          <option value="Industrial Chemistry">Industrial Chemistry</option>
                           <option value="International Relations">International Relations</option>
+                          <option value="Mechanical Engineering">Mechanical Engineering</option>
+                          <option value="Micro Biology">Micro Biology</option>
+                          <option value="Mass Communication">Mass Communication</option>
+                          <option value="Mass Communication">Mechatronics</option>
+                          <option value="Political Science">Political Science</option>
+                          <option value="Sociology">Sociology</option>
+                          <option value="others">Others</option>
                         </select>
                       </div>
                     </div>
@@ -184,6 +190,13 @@
                   <div class="col">
                     <h4 class="card-title">
                       Email: <strong>{{ $user->email }}</strong>
+                    </h4>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <h4 class="card-title">
+                      Reg No: <strong>{{ $user->reg_no }}</strong>
                     </h4>
                   </div>
                 </div>

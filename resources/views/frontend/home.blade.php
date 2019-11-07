@@ -134,7 +134,7 @@
 							</div>
 							<a href="{{ route('join-sanctuary') }}"
 								class="ml-3 button button-circle button-border button-dark button-green button-large tright nomargin clearfix"
-								data-scrollto="#section-about" data-offset="60">Join Sanctuary<i class="icon-line-arrow-right"></i></a>
+							>Join Sanctuary<i class="icon-line-arrow-right"></i></a>
 						</div>
 					</div>
 					<a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="65"
@@ -196,7 +196,7 @@
 
 							<div class="team">
 								<div class="team-image">
-									<img src="images/team/1.jpg" alt="Olotufore Joshua">
+									<img src="https://res.cloudinary.com/coderoute/image/upload/v1571818762/sanctuary/rdef9mvbmojkhg3by6sg.png" alt="Olotufore Joshua">
 									<div class="team-overlay">
 										{{-- <div class="team-social-icons">
 											<a href="#" class="social-icon si-borderless si-small si-facebook" title="Facebook">
@@ -223,7 +223,7 @@
 
 							<div class="team">
 								<div class="team-image">
-									<img src="images/team/2.jpg" alt="Mary Chinonso">
+									<img src="{{ asset('images/nonso.jpeg') }}" alt="Nwakudu Chinonso">
 									<div class="team-overlay">
 										{{-- <div class="team-social-icons">
 											<a href="#" class="social-icon si-borderless si-small si-twitter" title="Twitter">
@@ -243,7 +243,7 @@
 								</div>
 								<div class="team-desc team-desc-bg">
 									<div class="team-title">
-										<h4>Nwaduku Chinonso</h4><span>Assistant Head of Sanctuary</span>
+										<h4>Nwakudu Chinonso</h4><span>Assistant Head of Sanctuary</span>
 									</div>
 								</div>
 							</div>
@@ -274,7 +274,7 @@
 				<div class="row common-height">
 
 					<div class="col-lg-4 d-none d-md-block"
-						style="background: url('../images/services/main-bg.jpg') center center no-repeat; background-size: cover;">
+						style="background: url({{ asset('images/chapel.png') }}) center center no-repeat; background-size: cover;">
 					</div>
 					<div class="col-lg-8">
 						<div class="max-height">

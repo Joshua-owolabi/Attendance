@@ -10644,3 +10644,7 @@ a.text-dark:focus {
   }
 }
 
+.team-overlay:before {
+  background-color: #2d2a2a;
+}
+
